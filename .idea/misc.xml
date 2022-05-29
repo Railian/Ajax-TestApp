@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/java/ua/railian/ajax/testapp/MainActivity.kt" value="0.375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1395" />
+        <entry key="presentation/classic-view/src/main/res/layout/post_details.xml" value="0.14351851851851852" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/MainActivity.kt" value="0.17685185185185184" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/PostItem.kt" value="0.1675925925925926" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/PostItems.kt" value="0.1675925925925926" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/contact/details/ContactDetails.kt" value="0.25462962962962965" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/contact/details/ContactDetailsScreen.kt" value="0.9784768211920529" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/contact/list/ContactItem.kt" value="0.3277777777777778" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/contact/list/ContactList.kt" value="0.31203703703703706" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/contact/list/ContactListScreen.kt" value="0.31319290465631927" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/post/PostItems.kt" value="0.15925925925925927" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/postlist/PostItem.kt" value="0.29259259259259257" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/userlist/FilterByUserAlert.kt" value="0.4965909090909091" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/userlist/UserItem.kt" value="0.29814814814814816" />
+        <entry key="presentation/compose/src/main/kotlin/ua/railian/ajax/testapp/presentation/compose/ui/userlist/UserList.kt" value="0.4046296296296296" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

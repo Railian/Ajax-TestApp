@@ -1,0 +1,3 @@
+ua.railian.ajax.testapp.presentation.classicview
+id text_view
+layout post_details
