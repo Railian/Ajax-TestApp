@@ -1,5 +1,3 @@
-include(":dependency-resolver")
-
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -22,6 +20,8 @@ include(":app")
 
 include(":domain:contract")
 include(":domain:logic")
+
+include(":dependency-resolver")
 
 include(":implementation:database:room")
 include(":implementation:network:ktor")

@@ -158,7 +158,7 @@ fun EditSaveFloatingButton(
         content = {
             Icon(
                 imageVector = when (editable) {
-                    true -> Icons.Default.Done
+                    true -> Icons.Default.Save
                     else -> Icons.Default.Edit
                 },
                 contentDescription = when (editable) {
