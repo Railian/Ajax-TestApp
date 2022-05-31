@@ -44,6 +44,7 @@ dependencies {
     api(project(Module.domainContract))
 
     implementation(project(Module.domainLogic))
+    implementation(project(Module.implementationPreferencesSharedPreferences))
     implementation(project(Module.implementationDatabaseRoom))
     implementation(project(Module.implementationNetworkKtor))
 

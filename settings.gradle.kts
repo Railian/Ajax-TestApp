@@ -23,6 +23,7 @@ include(":domain:logic")
 
 include(":dependency-resolver")
 
+include(":implementation:preferences:shared-preferences")
 include(":implementation:database:room")
 include(":implementation:network:ktor")
 

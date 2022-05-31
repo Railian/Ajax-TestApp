@@ -7,6 +7,7 @@ object Module {
 
     const val dependencyResolver = ":dependency-resolver"
 
+    const val implementationPreferencesSharedPreferences = ":implementation:preferences:shared-preferences"
     const val implementationDatabaseRoom = ":implementation:database:room"
     const val implementationNetworkKtor = ":implementation:network:ktor"
 

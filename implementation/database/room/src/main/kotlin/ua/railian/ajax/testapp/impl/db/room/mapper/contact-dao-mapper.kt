@@ -3,19 +3,19 @@ package ua.railian.ajax.testapp.impl.db.room.mapper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import ua.railian.ajax.testapp.domain.contract.datasource.LocalContactDataSource
+import ua.railian.ajax.testapp.domain.contract.datasource.preference.AppPreferences
 import ua.railian.ajax.testapp.domain.contract.entity.Contact
 import ua.railian.ajax.testapp.impl.db.room.dao.RoomContactDao
 import ua.railian.ajax.testapp.impl.db.room.entity.ContactEntity
-import ua.railian.ajax.testapp.impl.db.room.preference.DatabasePreferences
 
 fun RoomContactDao.adapt(
-    databasePreferences: DatabasePreferences,
+    appPreferences: AppPreferences,
 ) = object : LocalContactDataSource {
 
     val dao = this@adapt
 
     override var isInitialized: Boolean
-            by databasePreferences::isContactDatabaseInitialized
+            by appPreferences::isLocalContactDataSourceInitialized
 
     override fun contactsFlow(): Flow<List<Contact>> =
         dao.contactsFlow().map { it.map(ContactEntity::adapt) }

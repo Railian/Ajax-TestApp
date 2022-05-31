@@ -1,4 +1,4 @@
-package ua.railian.ajax.testapp.presentation.compose.ui
+package ua.railian.ajax.testapp.presentation.compose.ui.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

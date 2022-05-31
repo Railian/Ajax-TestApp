@@ -1,8 +1,7 @@
-package ua.railian.ajax.testapp.presentation.compose.ui
+package ua.railian.ajax.testapp.presentation.compose.ui.main
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.*
-import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -14,16 +13,17 @@ import ua.railian.ajax.testapp.presentation.compose.ui.contact.list.ContactListS
 
 @Composable
 fun MainNavGraph(
+    viewModel: MainViewModel = hiltViewModel<MainViewModelImpl>(),
     navController: NavHostController = rememberNavController()
 ) {
 
-    var darkTheme by remember { mutableStateOf(false) }
+    val dayNightMode by viewModel.dayNightMode.collectAsState()
 
     NavHost(navController = navController, startDestination = "contacts") {
         composable(route = "contacts") {
             ContactListScreen(
-                darkTheme = darkTheme,
-                onThemeToggle = { darkTheme = !darkTheme },
+                dayNightMode = dayNightMode,
+                onDayNightModeChange = viewModel::changeDayNightMode,
                 onContactClick = { navController.navigate(route = "contact/${it.id}") }
             )
         }
@@ -32,7 +32,7 @@ fun MainNavGraph(
             arguments = listOf(navArgument("id") { type = NavType.LongType })
         ) {
             ContactDetailsScreen(
-                darkTheme = darkTheme,
+                dayNightMode = dayNightMode,
                 onBackClick = { navController.popBackStack() }
             )
         }

@@ -4,7 +4,7 @@
     <application>
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AjaxTestApp"
             android:windowSoftInputMode="adjustResize">

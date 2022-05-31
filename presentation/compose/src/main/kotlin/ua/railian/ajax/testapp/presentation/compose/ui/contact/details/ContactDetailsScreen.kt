@@ -16,15 +16,22 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import ua.railian.ajax.testapp.presentation.compose.extension.color
 import ua.railian.ajax.testapp.presentation.compose.theme.AjaxTestAppTheme
 import ua.railian.ajax.testapp.presentation.compose.ui.contact.accentSurface
+import ua.railian.ajax.testapp.domain.contract.entity.DayNightMode
 
 @Composable
 fun ContactDetailsScreen(
     viewModel: ContactDetailsViewModel = hiltViewModel<ContactDetailsViewModelImpl>(),
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    dayNightMode: DayNightMode,
     onBackClick: () -> Unit
 ) {
 
-    AjaxTestAppTheme(darkTheme) {
+    AjaxTestAppTheme(
+        darkTheme = when (dayNightMode) {
+            DayNightMode.Day -> false
+            DayNightMode.Night -> true
+            DayNightMode.System -> isSystemInDarkTheme()
+        }
+    ) {
 
         val title = viewModel.title.collectAsState(initial = null).value.orEmpty()
         val contactState = viewModel.contact.collectAsState(initial = null)

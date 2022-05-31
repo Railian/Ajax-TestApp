@@ -21,6 +21,8 @@
             <option value="$PROJECT_DIR$/implementation/database/room" />
             <option value="$PROJECT_DIR$/implementation/network" />
             <option value="$PROJECT_DIR$/implementation/network/ktor" />
+            <option value="$PROJECT_DIR$/implementation/preferences" />
+            <option value="$PROJECT_DIR$/implementation/preferences/shared-preferences" />
             <option value="$PROJECT_DIR$/presentation" />
             <option value="$PROJECT_DIR$/presentation/classic-view" />
             <option value="$PROJECT_DIR$/presentation/compose" />
